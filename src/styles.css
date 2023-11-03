@@ -142,3 +142,27 @@ img.socialIcon {
 img.socialIcon:hover {
   filter: drop-shadow(0 0 0.75rem black);
 }
+
+/* add an amazing animation to the social icons */
+img.socialIcon:hover {
+  animation: slideIn 0.5s ease-in-out 0.25;
+}
+
+/* agrega slide in animation que suba y baja un 20%*/
+@keyframes slideIn {
+  0% {
+    transform: translateY(20%);
+  }
+  25% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-20%);
+  }
+  75% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(20%);
+  }
+}
