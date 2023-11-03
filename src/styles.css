@@ -4,6 +4,16 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
+/* add a slide in animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 html,
 body {
   font-family: "Montserrat", sans-serif;
@@ -12,6 +22,7 @@ body {
   overflow-x: hidden;
   padding: 0;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 div#main {
@@ -51,7 +62,7 @@ h1 {
   font-weight: 400;
   line-height: 0.8;
   margin: 0;
-  color: #F0F0F0;
+  color: rgb(1, 73, 168);
 }
 
 h2 {
@@ -59,7 +70,7 @@ h2 {
   font-weight: 400;
   margin: 0;
   padding-top: 1rem;
-  color: #F0F0F0;
+  color: rgb(0, 50, 115);
 }
 
 h3 {
@@ -102,6 +113,8 @@ a {
 
 a:hover {
   color: #4e567e;
+  text-decoration: underline;
+  text-decoration-thickness: 0.25rem;
 }
 
 .container {
@@ -124,4 +137,8 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+img.socialIcon:hover {
+  filter: drop-shadow(0 0 0.75rem black);
 }
